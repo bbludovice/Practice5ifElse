@@ -1,0 +1,63 @@
+/* 
++-------------------------------------------------------------------+  
+| = : = : = : = : = : = : = : = : = : = : = : = : = : = : = : = : = |
+|{>/-------------------------------------------------------------\<}|
+|: |                                                             | :| 
+| :|                 C program by Breanne Ludovice               |: | 
+|: |                                                             | :|
+| :|                   CS1310 September 27, 2018                 |: |
+|: |                                                             | :| 
+| :|                Assignment: Practice 5, If-Else              |: | 
+|: |                                                             | :|
+| :|                             _ _                             |: | 
+|: |                           _{ ' }_                           | :| 
+| :|                          { `.!.` }                          |: |
+|: |                          ',_/Y\_,'                          | :| 
+| :|                            {_,_}                            |: | 
+|: |                              |                              | :|
+| :|                            (\|  /)                          |: | 
+|: |                             \| //                           | :|
+| :|                              |//                            |: |
+|: |                           \\ |/  //                         | :|
+| :|                        ^^^^^^^^^^^^^^^                      |: |
+|{>\-------------------------------------------------------------/<}|
+| = : = : = : = : = : = : = : = : = : = : = : = : = : = : = : = : = |
++-------------------------------------------------------------------+
+*/
+
+#include <stdio.h>
+
+void main (void)
+{
+ int a, b, c;  /* three integers the user inputs */
+ 
+ printf ("This program gets three integers from the user and prints out the smallest integer.\n\n");
+ 
+ printf ("Please enter your first number:  ");
+ scanf ("%i", &a);
+ printf ("\nYou entered %i.\n", a);
+ 
+ printf ("Please enter your second number:  ");
+ scanf ("%i", &b);
+ printf ("\nYou entered %i.\n", b);
+ 
+ printf ("Please enter your third number:  ");
+ scanf ("%i", &c);
+ printf ("\nYou entered %i.\n\n", c);
+ 
+ printf ("The three numbers you entered are: %i, %i, and %i.\n\n\n", a, b, c);
+ 
+ if (a < b && a < c)
+  {
+   printf ("%i is the smallest number of the three.\n", a);
+  }
+  else if (b < a && b < c)
+   {
+   	printf ("%i is the smallest number of the three.\n", b);
+   }
+    else if (c < a && c < b)
+     {
+      printf ("%i is the smallest number of the three.\n", c);
+     }
+ 	
+}
